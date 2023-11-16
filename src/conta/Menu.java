@@ -2,6 +2,8 @@ package conta;
 
 import java.util.Scanner;
 
+import conta.util.Cores;
+
 public class Menu {
 
 	public static void main(String[] args) {
@@ -12,9 +14,10 @@ public class Menu {
 		
 		while(true) {
 			
-			System.out.println("*****************************************************");
+			System.out.println(Cores.TEXT_GREEN_BRIGHT + Cores.ANSI_BLACK_BACKGROUND
+					+ "*****************************************************");
 			System.out.println("                                                     ");
-			System.out.println("                BANCO DO BRAZIL COM Z                ");
+			System.out.println("                BANCO HACKEADO HAHAHAHA              ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("            1 - Criar Conta                          ");
@@ -31,10 +34,11 @@ public class Menu {
 			System.out.println("Entre com a opção desejada:                          ");
 			System.out.println("                                                     ");
 			
+			
 			opcao = leia.nextInt();
 			
 			if(opcao == 9) {
-				System.out.println("\nBanco do Brazil com Z - O seu futuro começa aqui!");
+				System.out.println("\nBANCO HACKEADO HAHAHAHA - O seu futuro termina aqui!");
 				sobre();
 				leia.close();
 				System.exit(0);
@@ -42,28 +46,28 @@ public class Menu {
 			
 			switch(opcao) {
 			case 1:
-				System.out.println("\nCriar Conta\n\n");
+				System.out.println("\nCriar Conta HACKEADA\n\n");
 				break;
 			case 2:
-				System.out.println("\nListar todas as Contas\n\n");
+				System.out.println("\nListar todas as Contas HACKEADAS\n\n");
 				break;
 			case 3:
-				System.out.println("\nConsultar dados da Conta- por número\n\n");
+				System.out.println("\nConsultar dados da Conta HACKEADA por número\n\n");
 				break;
 			case 4:
-				System.out.println("\nAtualizar dados da Conta\n\n");
+				System.out.println("\nAtualizar dados da Conta HACKEADA\n\n");
 				break;
 			case 5:
-				System.out.println("\nApagar a Conta\n\n");
+				System.out.println("\nApagar a Conta HACKEADA\n\n");
 				break;
 			case 6:
-				System.out.println("\nSaque\n\n");
+				System.out.println("\nSaque HAHAHAH\n\n");
 				break;
 			case 7:
-				System.out.println("\nDepósito\n\n");
+				System.out.println("\nDepósito pra conta do HACKER\n\n");
 				break;
 			case 8:
-				System.out.println("\nTransferência entre Contas\n\n");
+				System.out.println("\nTransferência entre Contas HACKEADAS\n\n");
 				break;
 			default:
 				System.out.println("\nOpção Inválida\n");
