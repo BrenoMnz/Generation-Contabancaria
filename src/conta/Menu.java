@@ -1,5 +1,7 @@
 package conta;
 
+import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import conta.model.Conta;
@@ -63,7 +65,13 @@ public class Menu {
 			System.out.println("                                                     ");
 			
 			
-			opcao = leia.nextInt();
+			try {
+				opcao = leia.nextInt();
+			} catch (InputMismatchException e) {
+				System.out.println("\nDigite valores inteiros!");
+				leia.nextLine();
+				opcao = 0;
+			}
 			
 			if(opcao == 9) {
 				System.out.println("\nBANCO HACKEADO HAHAHAHA - O seu futuro termina aqui!");
@@ -75,34 +83,52 @@ public class Menu {
 			switch(opcao) {
 			case 1:
 				System.out.println("\nCriar Conta HACKEADA\n\n");
+				keyPress();
 				break;
 			case 2:
 				System.out.println("\nListar todas as Contas HACKEADAS\n\n");
+				keyPress();
 				break;
 			case 3:
 				System.out.println("\nConsultar dados da Conta HACKEADA por número\n\n");
+				keyPress();
 				break;
 			case 4:
 				System.out.println("\nAtualizar dados da Conta HACKEADA\n\n");
+				keyPress();
 				break;
 			case 5:
 				System.out.println("\nApagar a Conta HACKEADA\n\n");
+				keyPress();
 				break;
 			case 6:
 				System.out.println("\nSaque HAHAHAH\n\n");
+				keyPress();
 				break;
 			case 7:
 				System.out.println("\nDepósito pra conta do HACKER\n\n");
+				keyPress();
 				break;
 			case 8:
 				System.out.println("\nTransferência entre Contas HACKEADAS\n\n");
+				keyPress();
 				break;
 			default:
 				System.out.println("\nOpção Inválida\n");
+				keyPress();
 				break;
 			}
 		}
 
+	}
+	
+	public static void keyPress() {
+		try {
+			System.out.println("\n\nPressione Enter para continuar AHAHAHA...");
+			System.in.read();
+		} catch (IOException e) {
+			System.out.println("Você pressionou uma tecla diferente de enter!");
+		}
 	}
 	
 	public static void sobre() {
