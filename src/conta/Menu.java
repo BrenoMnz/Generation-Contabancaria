@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import conta.model.Conta;
 import conta.model.ContaCorrente;
 import conta.model.ContaPoupanca;
 import conta.util.Cores;
@@ -13,14 +12,6 @@ public class Menu {
 
 	public static void main(String[] args) {
 		System.out.println(Cores.TEXT_GREEN_BRIGHT + Cores.ANSI_BLACK_BACKGROUND);
-		
-		// Teste da Classe Conta
-		Conta c1 = new Conta(1, 123, 1, "Adriana", 10000.0f);
-		c1.visualizar();
-		c1.sacar(12000.0f);
-		c1.visualizar();
-		c1.depositar(5000.0f);
-		c1.visualizar();
 		
 		// Teste da Classe Conta Corrente
 		ContaCorrente cc1 = new ContaCorrente(1, 123, 1, "José da Silva", 0.0f, 1000.0f);
